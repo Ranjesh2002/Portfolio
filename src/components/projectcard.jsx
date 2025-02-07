@@ -32,7 +32,8 @@ const ProjectCard = ({ title, description, image, link }) => (
 ProjectCard.propTypes = {
   title: PropTypes.string.isRequired, // title must be a string and is required
   description: PropTypes.string.isRequired, // description must be a string and is required
-  image: PropTypes.string.isRequired, // image must be a string (URL) and is required
+  image: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired, // image must be a string (URL) and is required
 };
 
 export default ProjectCard;
