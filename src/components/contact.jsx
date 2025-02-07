@@ -81,7 +81,10 @@ const Contact = () => {
           </div>
           <div className="mx-7">
             <button className="bg-gradient-to-r from-[#2c3e50] to-[#3498db] text-white px-8 py-1.5 rounded-[10px] border-none cursor-pointer font-semibold tracking-[0.5px] transition-all duration-300 shadow-lg my-9 hover:transform hover:translate-y-[-2px] hover:shadow-2xl">
-              <a href="/Ranjesh.pdf" download="Ranjesh_Thakur_CV.pdf">
+              <a
+                href="/Portfolio/images/Ranjesh.pdf"
+                download="Ranjesh_Thakur_CV.pdf"
+              >
                 <FaDownload /> Download CV
               </a>
             </button>
