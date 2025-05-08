@@ -1,26 +1,23 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
-import Navigation from "./components/navbar";
 import About from "./components/about";
+import Navbar from "./components/navbar";
 import Project from "./components/project";
-import Skills from "./components/skill";
-import Contact from "./components/contact";
+import Contact from "./pages/contact";
 import Footer from "./components/footer";
-import ThemeToggle from "./components/theme";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Navigation />
-      <div className=" max-w-[1200px] mx-auto p-1 ">
-        <About />
-        <Project />
-        <Skills />
-        <Contact />
-        <ThemeToggle />
-      </div>
+    <Router basename="/Portfolio">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
