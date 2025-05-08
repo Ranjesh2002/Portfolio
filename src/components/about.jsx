@@ -30,7 +30,7 @@ const About = () => {
           <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
             <div className="relative">
               <img
-                src="public/images/image 1.png"
+                src="/Portfolio/images/image 1.png"
                 alt="About Me"
                 className=" md:w-64 rounded-xl shadow-lg border-2 border-gray-200 dark:border-gray-700 hover:scale-105 transition-transform duration-300 h-[300px]"
                 loading="lazy"
